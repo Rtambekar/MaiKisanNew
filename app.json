@@ -4,7 +4,7 @@
     "slug": "MaiKisanNew",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./app/(assets)/(images)/Maikisaan_logo.png",
+    "icon": "./src/assets/images/Maikisaan_logo.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,21 +13,21 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./app/(assets)/(images)/Maikisaan_logo.png",
+        "foregroundImage": "./src/assets/images/Maikisaan_logo.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./app/(assets)/(images)/Maikisaan_logo.png"
+      "favicon": "./src/assets/images/Maikisaan_logo.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./app/(assets)/(images)/Maikisaan_logo.png",
+          "image": "./src/assets/images/Maikisaan_logo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"

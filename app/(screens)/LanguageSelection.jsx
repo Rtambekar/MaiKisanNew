@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
-import { Colors } from "../(constants)/Colors";
+import { Colors } from "@/src/constants/Colors";
 import { useRouter } from 'expo-router';
 
 const LanguageSelection = ({ navigation }) => {

@@ -2,16 +2,16 @@ import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity } from "reac
 import React, { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "expo-router";
-import Flag from "@/app/(assets)/(Svgicons)/Flag";
-import { Colors } from "../(constants)/Colors";
+import Flag from "@/src/assets/Svgicons/Flag";
+import { Colors } from "@/src/constants/Colors";
 import Checkbox from "expo-checkbox";
-import Verify from "@/app/(assets)/(Svgicons)/Checked";
-import Google from "@/app/(assets)/(Svgicons)/Google";
-import Facebook from "@/app/(assets)/(Svgicons)/Facebook";
-import Apple from "@/app/(assets)/(Svgicons)/Apple";
-import {requestOtp} from "../(services)/_authService";
+import Verify from "@/src/assets/Svgicons/Checked";
+import Google from "@/src/assets/Svgicons/Google";
+import Facebook from "@/src/assets/Svgicons/Facebook";
+import Apple from "@/src/assets/Svgicons/Apple";
+import {requestOtp} from "@/src/services/Authapi/_authService";
 import { useFonts } from "expo-font";
- 
+
 const Index = () => {
 
   const [isChecked, setIsChecked] = useState(false);
@@ -33,7 +33,7 @@ const Index = () => {
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
         <Image
-          source={require("../(assets)/(images)/Maikisaan_logo.png")}
+          source={require("@/src/assets/images//Maikisaan_logo.png")}
           style={styles.image}
         />
         <Text style={{ fontSize: 18, fontWeight: "700", padding: 25, fontFamily: 'SpaceMono' }}>
@@ -103,12 +103,14 @@ const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor:Colors.White,
+   
   },
   container: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#FFFFFF",
+    marginTop: 30
   },
   maintext: {
     color: "black",
@@ -192,10 +194,11 @@ const styles = StyleSheet.create({
   },
 
   iconcontainer: {
+    marginTop: 15,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: Colors.White,
+    // backgroundColor: Colors.White,
   },
   iconWithShadow: {
     margin: 40       // SPACE BETWEEN ICONS.................//

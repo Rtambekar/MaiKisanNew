@@ -10,9 +10,9 @@ import {
     Platform,
     ActivityIndicator
 } from 'react-native';
-import { Colors } from "../(constants)/Colors";
+import { Colors } from "@/src/constants/Colors";
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {verifyOtp} from "../(services)/_authService";
+import {verifyOtp} from "@/src/services/Authapi/_authService";
 import { useNavigation, useLocalSearchParams } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';

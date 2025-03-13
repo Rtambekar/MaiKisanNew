@@ -7,7 +7,7 @@ const RootLayout = () => {
     <Stack screenOptions={{ headerShown: false }}>
       <Stack.Screen name='index' />
       <Stack.Screen name='OTPScreen' />
-      <Stack.Screen name='Sigup' />
+      <Stack.Screen name='Signup' />
       <Stack.Screen name='LanguageSelection' />
       <Stack.Screen name='Explore' />
     </Stack>

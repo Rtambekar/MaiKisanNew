@@ -10,10 +10,10 @@ import {
     ActivityIndicator,
     Platform
 } from 'react-native';
-import {createBusiness} from "../(services)/_businessService";
+import {createBusiness} from "@/src/services/BusinessApi/_businessService";
 import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Colors } from "../(constants)/Colors";
+import { Colors } from "@/src/constants/Colors";
 import { Picker } from '@react-native-picker/picker';
 
 const Signup = () => {
